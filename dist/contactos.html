@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/726b802474.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <title>AboutMe</title>
+</head>
+<body>
+  <!--HEADER-->
+  <header id="header-inner">
+    <div class="container">
+        <nav id="main-nav">
+        <img src="img/logofr4.png" alt="My Portfolio" id="logo">
+      <ul>
+        <li><a href="index_pt.html">Início</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="contactos.html" class="current">Contactos</a></li>
+        <li><a href="projectos.html">Projectos</a></li>
+        <li><a href="curriculum_pt.html">Curriculum</a></li>
+      </ul>
+     </nav>
+    </div>
+  </header>
+  <!--SECTION A: CONTACT FORM-->
+  <section id="contact-a" class="text-center py-3">
+    <div class="container">
+      <h2 class="section-title">Contactem-me</h2>
+      <div class="bottom-line"></div>
+      <p class="lead">Preencha o formulario de contacto</p>
+      <form method="POST" 
+      data-netlify="true" 
+      data-netlify-recaptcha="true"
+      >
+        <div class="text-fields">
+          <input 
+          type="text" 
+          class="text-input name-input" 
+          placeholder="Nome"
+          name="Nome"
+          />
+          <input 
+          type="text" 
+          class="text-input subject-input" 
+          placeholder="Assunto"
+          name="Assunto"
+          />
+          <input 
+          type="email" 
+          class="text-input email-input" 
+          placeholder="Endereço de Email"
+          name="Endereço de Email"
+          />
+          <input 
+          type="text" 
+          class="text-input phone-input" 
+          placeholder="Telemovel"
+          name="Telemovel"
+          />
+          <textarea 
+          class="text-input message-input" 
+          placeholder="A sua Mensagem"
+          name="Mensagem"
+          ></textarea>
+          <div>
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+        </div>
+        <button type="submit" class="btn-dark">Submeter</button>
+      </form>
+    </div>
+  </section>
+
+  <!--SECTION B: Contact Info-->
+  <section id="contact-b" class="py-3 bg-dark">
+    <div class="container">
+      <div class="contact-info">
+        <div class="contactos1">
+          <i class="fas fa-envelope fa-2x"></i>
+          <h3>Email</h3>
+          <p>filipebrazinha@gmail.com</p>
+        </div>
+         <div class="contactos2">
+          <i class="fas fa-address-card fa-2x"></i>
+          <h3>Localização</h3>
+          <p>Lisboa</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!--SECTION C: TAGLINE-->
+  <section id="contact-c" class="bg-main py-4">
+    <div class="container">
+    <h1>Vamos Começar o Seu Novo Projecto</h1>
+  </div>
+  </section>
+
+<!--FOOTER-->
+ <footer id="main-footer">
+    <div class="footer-content container">
+      <p>Copyright &copy; 2022. All Right Reserved</p>
+      <div class="social">
+        <a href="https://twitter.com/FilipeBrazinha" class="icones"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/filipebramos" class="icones"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com" class="icones"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

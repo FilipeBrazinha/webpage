@@ -60,10 +60,10 @@ h6 {
   color: #ffbc00; }
 
 #logo {
-  width: 340px;
+  width: 240px;
   height: auto;
   z-index: 1;
-  margin-top: 20px; }
+  margin-top: 10px; }
 
 #main-nav {
   display: flex;
@@ -285,10 +285,10 @@ h2.interests {
     #header-home .header-content {
       padding-top: 5rem; }
   #logo {
-    width: 180px;
+    width: 140px;
     height: auto;
     z-index: 1;
-    margin-top: 20px; }
+    margin-top: 5px; }
   li {
     padding: 1rem 0.5rem; }
   #contact-c {

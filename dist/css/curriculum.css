@@ -65,7 +65,7 @@ body {
   /*LOGO*/
   
   #logo{
-    width: 340px;
+    width: 240px;
     height: auto;
     z-index: 1;
     margin-top: 20px;
@@ -245,6 +245,8 @@ h1 {
       margin: 0;
    }
 
+ 
+
    ul.curr{
     margin-right: 10px;
     margin-top: 10px;
@@ -255,10 +257,10 @@ h1 {
   }
 
   #logo{
-    width: 180px;
+    width: 140px;
     height: auto;
     z-index: 1;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 0px;
    }
 

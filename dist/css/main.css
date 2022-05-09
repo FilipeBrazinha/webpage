@@ -5,6 +5,54 @@
   overflow: hidden;
   width: 70%; }
 
+  #main-nav{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+  }
+
+  .nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+  }
+
+  .hamburger{
+    display: none;
+    cursor: pointer;
+  }
+  
+  .bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s easy-in-out;
+    transition: all 0.3s easy-in-out;
+    background-color: #fff;
+  }
+  a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-bottom: 3px transparent solid;
+    padding-bottom: 0.05rem;
+    transition: border-color 0.5s;
+    text-shadow: 2px 2px black; }
+    a:hover {
+      border-color: #ccc; }
+    a.current {
+      border-color: #ffbc00; }
+
+      li{
+        list-style: none;
+      }
+
+
+
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   padding: 0.8rem 2rem;
@@ -41,13 +89,6 @@ input[class^="btn-"]:hover {
   padding: 0;
   font-family: 'Dosis', sans-serif; }
 
-a {
-  text-decoration: none;
-  color: #333; }
-
-ul {
-  list-style: none; }
-
 h2, h3, h4 {
   text-transform: uppercase; }
 
@@ -65,18 +106,6 @@ h6 {
   z-index: 1;
   margin-top: 10px; }
 
-#main-nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 1rem; }
-
-ul {
-  display: flex;
-  margin-top: 0.1rem; }
-
-li {
-  padding: 1rem 1.5rem; }
-
 .btn-light {
   color: #333;
   text-shadow: none;
@@ -86,18 +115,7 @@ li {
   margin-left: 1.5rem;
   opacity: 0.7; }
 
-a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-  border-bottom: 3px transparent solid;
-  padding-bottom: 0.2rem;
-  transition: border-color 0.5s;
-  text-shadow: 2px 2px black; }
-  a:hover {
-    border-color: #ccc; }
-  a.current {
-    border-color: #ffbc00; }
+
 
 a.icones {
   border-bottom: none;
@@ -105,7 +123,7 @@ a.icones {
   color: #fff; }
 
 #header-home {
-  background: url("../img/showcase1.jpg") no-repeat center/cover;
+  background: url("../img/showcase1.jpg") no-repeat fixed center/cover;
   height: 100vh;
   color: #fff; }
   #header-home .header-content {
@@ -205,7 +223,9 @@ h2.interests {
 
 #contact-a .text-fields {
   display: grid;
-  grid-template-areas: "name email" "subject phone" "message message";
+  grid-template-areas: "name email"
+ "subject phone"
+ "message message";
   grid-gap: 1.2rem;
   margin-bottom: 1.2rem; }
   #contact-a .text-fields .name-input {
@@ -280,36 +300,28 @@ h2.interests {
   color: #ffbc00; }
 
 @media (max-width: 825px) {
-  #header-home {
-    height: 30rem; }
-    #header-home .header-content {
-      padding-top: 5rem; }
+  
   #logo {
     width: 140px;
     height: auto;
     z-index: 1;
     margin-top: 5px; }
-  li {
-    padding: 1rem 0.5rem; }
+ 
   #contact-c {
     height: 120px;
     font-size: 30px;
     padding-top: 50px; } }
 
 @media (max-width: 550px) {
-  #main-nav {
-    flex-direction: column;
-    align-items: center; }
-    #main-nav li {
-      padding: 1rem 0.7rem;
-      font-size: 0.7rem; }
+ 
+  
   #header-home h1 {
     font-size: 1.6rem;
     line-height: 1.2;
-    margin-top: 100px; }
+    margin-top: 200px; }
   .lead {
     font-size: 0.9rem;
-    margin-top: 20px; }
+    margin-top: 5px; }
   .btn-light {
     color: #333;
     text-shadow: none;
@@ -323,16 +335,17 @@ h2.interests {
     margin-bottom: 5px; }
   .container {
     width: 90%; }
-  #header-home {
-    height: 40rem;
-    border-bottom: 3px solid #ffbc00;
-    background-position: 20% 30%; }
+  
   #header-inner {
     height: 8rem; }
   #header h2.section-title {
     font-size: 0.1rem; }
   #contact-a .text-fields {
-    grid-template-areas: "name" "subject" "email" "phone" "message"; }
+    grid-template-areas: "name"
+ "subject"
+ "email"
+ "phone"
+ "message"; }
   #contact-b div {
     border-bottom: 1px #555 solid; }
   .contactos1 {
@@ -344,7 +357,9 @@ h2.interests {
       padding: 1rem;
       height: 5rem; }
   #about-a .about-info2 {
-    grid-template-areas: "aw1" "aw2" "aw3";
+    grid-template-areas: "aw1"
+ "aw2"
+ "aw3";
     margin-bottom: 1px;
     grid-gap: 0.2rem; }
   #about .award-1 {
@@ -362,7 +377,8 @@ h2.interests {
     color: #ffbc00; }
   #about-c .about-info1 {
     display: grid;
-    grid-template-areas: "bioimage"  "bio"; }
+    grid-template-areas: "bioimage" 
+ "bio"; }
   h2.section-title {
     color: #333;
     display: flex;

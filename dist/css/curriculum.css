@@ -1,7 +1,7 @@
 :root {
   --primary-color: #425b84;
   --secondary-color: #5b7bb4;
-  --max-width: 1370px; }
+  }
 
 * {
   margin: 0;
@@ -15,22 +15,75 @@ body {
   overflow-x: hidden;
   padding-bottom: 50px; }
 
-  a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-  }
+  #logo {
+    width: 180px;
+    height: auto;
+    z-index: -1;
+    margin-top: 20px; }
+
+p.lead,
+h1{
+    text-align: center; 
+    font-size: 1.3rem;
+    margin-bottom: 1rem; }
+
+
+  .container {
+    max-width: 1280px;
+    padding: 0 1.5rem;
+    margin: auto;
+    overflow: hidden;
+    width: 70%; }
   
-  ul.curr{
-    list-style: none;
-  }
+    #main-nav{
+      min-height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 24px;
+    }
   
-  h2, h3, h4{
-    text-transform: uppercase;
-  }
+    .nav-menu{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 60px;
+    }
   
-  img{
-    width: 100%;
-  }
+    .hamburger{
+      display: none;
+      cursor: pointer;
+    }
+    
+    .bar{
+      display: block;
+      width: 25px;
+      height: 3px;
+      margin: 5px auto;
+      -webkit-transition: all 0.3s easy-in-out;
+      transition: all 0.3s easy-in-out;
+      background-color: #fff;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      border-bottom: 3px transparent solid;
+      padding-bottom: 0.05rem;
+      transition: border-color 0.5s;
+      text-shadow: 2px 2px black; }
+      a:hover {
+        border-color: #ccc; }
+      a.current {
+        border-color: #ffbc00; }
+  
+        li{
+          list-style: none;
+        }
+  
+  
+  
+ 
   
   h6{
     display: flex;
@@ -38,22 +91,9 @@ body {
     color: #ffbc00;
   }
   
-  a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    border-bottom: 3px transparent solid;
-    padding-bottom: 0.2rem;
-    transition: border-color 0.5s;
-    text-shadow: 2px 2px rgb(0, 0, 0);
-  }
-    a:hover {
-      border-color: #ccc;
-    }
+ 
   
-    a.current{
-      border-color:#ffbc00
-    }
+ 
   
   
   a.icones{
@@ -62,47 +102,19 @@ body {
     color: #fff;
   
   }
-  /*LOGO*/
-  
-  #logo{
-    width: 240px;
-    height: auto;
-    z-index: 1;
-    margin-top: 20px;
-    margin-left: 202px;
-  }
+
+ 
   
  /*MAIN NAV*/
-  #main-nav{
-    display: flex;
-    justify-content: space-between;
-    padding-top: 1rem;
-  }
+ 
   
-  ul.curr{
-    display: flex;
-    margin-top: 0.1rem;
-    margin-right: 202px;
-  }
-  
-  li.curre{
-    padding: 1rem 1.5rem;
-    
-  }
 
-#main-header {
-  padding: 4rem 0; }
-
-.container {
-  max-width: 1370px;
-  margin: 0 auto;
-  text-align: center; }
 
 h1 {
   font-size: 2.3rem; }
 
 #timeline ul { 
-  padding: 50px 0; }
+  padding: 10px 0; }
 
 .edu-on{
   color: #ffbc00;
@@ -213,87 +225,10 @@ h1 {
   } 
 }
 
-@media (max-width: 825px){
-  #logo{
-    width: 180px;
-    height: auto;
-    z-index: 1;
-    margin-top: 20px;
-    margin-left: 120px;
-   }
-   #header-home{
-    height: 30rem;
-   }
-  .header-content{
-    padding-top: 5rem;
-  }
-  li.curre{
-    padding: 1rem 0.5rem;
-  }
-  ul.curr{
-    margin-right: 110px;
-  }
-}
-@media(max-width: 550px){
-  #main-nav{
-    flex-direction: column;
-    align-items: center;
-  }
-    li.curre{
-      padding: 0.4rem 0.7rem;
-      font-size: 0.7rem;
-      margin: 0;
-   }
 
+
+@media(max-width: 891px){
  
-
-   ul.curr{
-    margin-right: 10px;
-    margin-top: 10px;
-  }
-
-  #timeline ul{
-    padding: 10px 0px;
-  }
-
-  #logo{
-    width: 140px;
-    height: auto;
-    z-index: 1;
-    margin-top: 5px;
-    margin-left: 0px;
-   }
-
-  #header-home h1{
-    font-size: 1.6rem;
-    line-height: 1.2;
-    margin-top: 10px;
-  }
-
-  .lead{
-    font-size: 0.9rem;
-    margin-top: 20px;
-  }
-
-  .btn-light{
-    color: #333;
-    text-shadow: none;
-    background-color:  #fff;
-    border: 2px solid #ffbc00;
-    font-size: 1rem;
-    padding: 5px;
-    opacity: 0.7;
-  }
-
-  #header-home{
-      height: 40rem;
-      border-bottom: 3px solid #ccc;
-      background-position: 20% 30%;
-
-    }
-   #header-inner{
-      height: 8rem;
-    }
     /*RIGHT SIDE ARROWS*/
 #timeline ul li:nth-child(odd) div:before {
   left: -15px;
@@ -306,10 +241,90 @@ h1 {
   border-width: 8px 16px 8px 0;
   border-color: transparent #ffbc00 transparent transparent; }
   }
+  
+   
+    @media (max-width: 900px) {
 
-  @media(min-width: 1380px) and (max-width: 1920){
-    #logo{
-      display: none;
+      #main-nav{
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 24px;
+      }
+      .container{
+        width: 100%;
+        margin-top: 20px;
+      }
+
+      #logo {
+        width: 180px;
+        height: auto;
+        z-index: 1;
+        margin-top: 20px;
+        margin: 0; }
+    
+      #contact-c {
+        height: 120px;
+        font-size: 30px;
+        padding-top: 50px; } 
+      
+        .hamburger{
+          display: block;
+          margin-top: 20px;
+          margin-left: 40px;
+        }
+        .hamburger.active .bar:nth-child(2){
+          opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1){
+          transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3){
+          transform: translateY(-8px) rotate(-45deg);
+        }
+        .nav-menu{
+          position: fixed;
+          right: -100%;
+          top: 10%;
+          gap: 0;
+          flex-direction: column;
+          background-color: #262626;
+          width: 100%;
+          text-align: center;
+          transition: 0.5s;
+          opacity: 1;
+          border-bottom: 1px #555 solid;
+          z-index: 1;
+          opacity: 0.9;
+          
+    
+        }
+        .nav-item{
+          margin:16px 0; 
+          border-bottom: 2px rgb(56, 56, 56) solid;
+          width: 80%;
+       }
+      
+        .nav-menu.active{
+          right: 85px;
+          margin-top: -20px;
+          
+        }
+        
+        h1{
+    text-align: start; 
+    font-size: 1.3rem;
+    margin-bottom: 0;
+    margin-top: 1rem; }
+
+    p.lead{
+      font-size: 0.9rem;
+      text-align: left;
+      margin-bottom: 0;
     }
+    
   }
+     
+    
  
